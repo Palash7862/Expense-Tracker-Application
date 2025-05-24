@@ -92,7 +92,7 @@ class BudgetService
             $totalBudget = $budget->budget;
         }
 
-        $expenses  = $budget->expenses->sum('amount');
+        $expenses  = $budget?->expenses?->sum('amount');
 
         if( $expenses ){
             $totalExpense = $expenses;
